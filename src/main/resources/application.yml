@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: TestContainersSpringDemo
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/customQueriesDemo
+    username: postgres
+    password: postgres
+  jpa:
+    defer-datasource-initialization: true
+  sql:
+    init:
+      schema-locations: schema.sql
+      mode: always
